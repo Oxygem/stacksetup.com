@@ -1,4 +1,6 @@
 StackSetup
 ==========
 
-Stack Setup document source
+[Stack Setup](http://stacksetup.com) document source.
+
+No copyright, no rights reserved.
