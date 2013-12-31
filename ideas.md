@@ -12,7 +12,7 @@
 **HTTP**
 
 + nginx w/ SSL file server
-+ Add PHP-FPM to nginx
++ ~~Add PHP-FPM to nginx~~
 
 
 **FTP**
