@@ -1,3 +1,5 @@
+$description=How to display hardware information on linux
+$keywords=display hardware
 $title=Show Hardware Information
 
 Basic Info:

@@ -1,3 +1,5 @@
+$description=How to build and compile software on linux
+$keywords=build, compile
 $title=Packages, Building & Compiling
 
 

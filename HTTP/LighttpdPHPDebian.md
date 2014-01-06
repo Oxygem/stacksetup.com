@@ -1,3 +1,5 @@
+$description=How to setup Lighttpd on Debian Linux
+$keywords=lighttpd, debian
 $title=Lighttpd on Debian 6
 
 This wiki-entry will guide you through quickly setting up lighttpd to serve php-files.

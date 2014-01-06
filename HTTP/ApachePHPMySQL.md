@@ -1,3 +1,5 @@
+$description=How to set up Apache, PHP and MySQL
+$keywords=apache, php, mysql, linux
 $title=Apache + PHP with MySQL
 
 Here I'm manually installing Apache and PHP to obtain the latest versions. I'm using Debian but the following steps (except the first set of package/library installs) should work on any Linux distro. This tutorial/guide assumes MySQL-server is installed on the machine in the default location (/usr/local/mysql).

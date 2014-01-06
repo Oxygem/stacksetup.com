@@ -1,3 +1,5 @@
+$description=How to setup SSL with Apache
+$keywords=apache, ssl
 $title=Apache SSL
 
 It is assumed Apache is installed and compiled with SSL (recompile with --enable-ssl and --enable-setenvif).
