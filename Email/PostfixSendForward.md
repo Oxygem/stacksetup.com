@@ -12,7 +12,8 @@ This consists of two steps and programs being used:
 
 
 First install Postfix & Dovecot (Debian command below, I'm pretty sure most/all package managers will contain both):
-    apt-get install postfix dovecot
+
+    apt-get install postfix dovecot-core
 
 
 #### Mail Receiving & Forwarding
