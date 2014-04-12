@@ -38,7 +38,7 @@ Welcome to Stack Setup. A collection of useful Linux related tutorials, designed
     <ul>
         <li><a href="$=homeEmail/Checklist">Email sending checklist</a></li>
         <li><a href="$=homeEmail/PostfixDKIM">Postfix DKIM setup</a></li>
-        <li><a href="$=homePostfixSendForward">Postfix sending &amp; forwarding server</a></li>
+        <li><a href="$=homeEmail/PostfixSendForward">Postfix sending &amp; forwarding server</a></li>
     </ul>
 </div>
 
@@ -55,8 +55,8 @@ Welcome to Stack Setup. A collection of useful Linux related tutorials, designed
     <ul>
         <li><a href="$=homeHTTP/ApachePHPMySQL">Apache + PHP + MySQL</a></li>
         <li><a href="$=homeHTTP/ApacheSSL">Apache SSL setup</a></li>
-        <li><a href="$=homeLighttpdPHPDebian">Lighttpd + PHP on Debian</a></li>
-        <li><a href="$=homeNginxPHPDebian">Nginx + PHP on Debian</a></li>
+        <li><a href="$=homeHTTP/LighttpdPHPDebian">Lighttpd + PHP on Debian</a></li>
+        <li><a href="$=homeHTTP/NginxPHPDebian">Nginx + PHP on Debian</a></li>
     </ul>
 </div>
 
