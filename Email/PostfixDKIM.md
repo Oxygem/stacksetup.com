@@ -1,6 +1,6 @@
 $title=Postfix DKIM Setup
 
-Here we setup DKIM (wwwhttp://en.wikipedia.org/wiki/DomainKeys_Identified_Mail) for use with Postfix. To build the DKIM's for each email, we use software called OpenDKIM. This sits on a port listening on localhost only, and Postfix will pass emails 'through' the OpenDKIM server which will apply the keys (where appropriate – ie only on mail from owned domains).
+Here we setup DKIM ([http://en.wikipedia.org/wiki/DomainKeys_Identified_Mail](http://en.wikipedia.org/wiki/DomainKeys_Identified_Mail)) for use with Postfix. To build the DKIM's for each email, we use software called OpenDKIM. This sits on a port listening on localhost only, and Postfix will pass emails 'through' the OpenDKIM server which will apply the keys (where appropriate – ie only on mail from owned domains).
 
 DKIM is a three step process:
 
@@ -67,4 +67,5 @@ Start OpenDKIM & restart Postfix:
 If you send mail from any configured domains and watch /var/log/mail.info you should see nothing mentioning OpenDKIM (if it works). However when you check the email source you should see the DKIM along with the email. Send an email to check-auth@verifier.port25.com and it'll automatically reply with DKIM test results (as well as SPF & DomainKeys testing) included.
 
 Related:
-https://help.ubuntu.com/community/Postfix/DKIM
+
++ [https://help.ubuntu.com/community/Postfix/DKIM](https://help.ubuntu.com/community/Postfix/DKIM)
