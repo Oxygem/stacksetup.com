@@ -1,6 +1,6 @@
 $title=Postfix DKIM Setup
 
-Here we setup DKIM ([http://en.wikipedia.org/wiki/DomainKeys_Identified_Mail](http://en.wikipedia.org/wiki/DomainKeys_Identified_Mail)) for use with Postfix. To build the DKIM's for each email, we use software called OpenDKIM. This sits on a port listening on localhost only, and Postfix will pass emails 'through' the OpenDKIM server which will apply the keys (where appropriate – ie only on mail from owned domains).
+Here we setup DKIM ([http://en.wikipedia.org/wiki/DomainKeys\_Identified\_Mail](http://en.wikipedia.org/wiki/DomainKeys_Identified_Mail)) for use with Postfix. To build the DKIM's for each email, we use software called OpenDKIM. This sits on a port listening on localhost only, and Postfix will pass emails 'through' the OpenDKIM server which will apply the keys (where appropriate – ie only on mail from owned domains).
 
 DKIM is a three step process:
 
