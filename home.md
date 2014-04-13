@@ -77,6 +77,15 @@ Welcome to Stack Setup. A collection of useful Linux related tutorials, designed
 </div>
 
 <div class="left third">
+    <h4>VPN</h4>
+    <ul>
+        <li><a href="$=homeVPN/UsingTinc">Using Tinc to create a mesh network</a></li>
+    </ul>
+</div>
+
+<div class="clear"></div>
+
+<div class="left third">
     <h4>OpenVZ</h4>
     <ul>
         <li><a href="$=homeOpenVZ/IPTablesTricks">Iptables tricks</a></li>
@@ -84,9 +93,8 @@ Welcome to Stack Setup. A collection of useful Linux related tutorials, designed
     </ul>
 </div>
 
-<div class="clear"></div>
-
-<div class="left">
+<div class="left third">
+    <h4>&nbsp;</h4>
     <a href="$=homeIdeas">Stack ideas list</a>
 </div>
 </div>
