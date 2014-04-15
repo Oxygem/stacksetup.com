@@ -12,12 +12,11 @@
 **HTTP**
 
 + nginx w/ SSL file server
-+ ~~Add PHP-FPM to nginx~~
 
 
 **FTP**
 
-+ SFTP: easy ftp via SSH
++ remove alltogether? (put sftp into basics)
 + install some ftp server
 
 
@@ -37,3 +36,4 @@
 **VPN**
 
 + OpenVPN?
++ OpenVPN<>Tinc link for clients to server-world
