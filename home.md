@@ -94,6 +94,13 @@ Welcome to Stack Setup. A collection of useful Linux related tutorials, designed
 </div>
 
 <div class="left third">
+    <h4>Develop</h4>
+    <ul>
+        <li><a href="$=homeDevelop/JenkinsGitHub">Jenkins + GitHub</a></li>
+    </ul>
+</div>
+
+<div class="left third">
     <h4>&nbsp;</h4>
     <a href="$=homeIdeas">Stack ideas list</a>
 </div>

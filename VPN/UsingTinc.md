@@ -8,7 +8,6 @@ $title=Using Tinc to create a mesh network
 + [Debugging Tinc](#debug)
 
 
-<br />
 <h3 id="structure">Structure</h3>
 
 Below is an example directory tree for Tinc, which all participating nodes must hold:
@@ -37,7 +36,6 @@ Below is an example directory tree for Tinc, which all participating nodes must 
 `rsa_key.priv` is the private key of the local server.
 
 
-<br />
 <h3 id="install">Installing Tinc</h3>
 
 When installing Tinc remember it is important that the protocol versions (_not the same as Tinc versions_) match up across your network. I would advise using the same Tinc version on all nodes to make this easier. It's very easy to compile Tinc yourself, you will need headers/devel versions of the following: `libssl`, `liblzo`, `libzlib`.
@@ -50,7 +48,6 @@ When installing Tinc remember it is important that the protocol versions (_not t
     sudo make install
 
 
-<br />
 <h3 id="basic">Basic two node Tinc setup</h3>
 
 For this second we're going to deploy two servers to talk to each other via Tinc, I shall refer to them as the 'master' and 'client'. Note that technically Tinc is a mesh network, so there's no real 'master' server, simply a node which doesn't connect to any others, but is connected to. This is great because we can use multiple `ConnectTo` statements in `tinc.conf` to achieve a highly-available VPN. For this we are building our Tinc network on the `10.10.0.0/24` VPN which allows us to use addresses in the range `10.10.0.1` => `10.10.0.254`. We will set the master on `10.10.0.1` and the client on `10.10.0.2`.
@@ -111,7 +108,6 @@ All you do is replace `IP_TO_CHANGE` with the IP of whichever node you are on (m
 And, that should be that! Just run `sudo tincd -n vpn` on each box and hopefully they should both be able to ping each other on `10.10.0.1` and `10.10.0.2`. Not working? Checkout the debug section below to ways to find out what's going wrong:
 
 
-<br />
 <h3 id="debug">Debugging Tinc</h3>
 
 Tinc isn't the most user friendly application, and documentation is scarce, especially when you're seeing weird routing or network issues. Luckily there's a bunch of things we can use to get more information from Tinc. The best is simply running in the foregroud with a high debug level:
