@@ -28,6 +28,7 @@ Welcome to Stack Setup. A collection of useful Linux related tutorials, designed
     <ul>
         <li><a href="$=homeAdvanced/TuningAgainstIPAttacks">Tuning your server to deal with IP-based attacks</a></li>
         <li><a href="$=homeAdvanced/TuningDesktopDrivesRaid">Tuning desktop drives for RAID</a></li>
+        <li><a href="$=homeAdvanced/HotSwapRaid">How swapping with RAID</a></li>
     </ul>
 </div>
 
