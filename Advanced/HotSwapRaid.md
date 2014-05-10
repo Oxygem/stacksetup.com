@@ -15,9 +15,9 @@ Tail the end of dmesg and note the ata number, something similar to:
     [1380211.312313] sd 2:0:0:0: [sdc] Stopping disk
     [1380211.846080] ata3.00: disabled
 
-Replace the drive, and once replaced use this number to trigger a re-scan of the drive connection:
+Replace the drive, and once replaced use this number - 1 to trigger a re-scan of the drive connection:
 
-    echo "0 0 0 " > /sys/class/scsi_host/host<ata number>/scan
+    echo "0 0 0 " > /sys/class/scsi_host/host<ata number - 1>/scan
 
 Copy partitions from spare working to new drive:
 
