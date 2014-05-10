@@ -1,17 +1,29 @@
 $title=Hot Swapping with Raid
 
-Once the drive is swapped, disable it:
+Before removing drive, remove from raid arrays:
 
-    echo 1 > /sys/block/sdX/device/delete
+    mdadm -f /dev/mdX /dev/sdXX
+    mdadm -r /dev/mdX /dev/sdXX
 
-Then re-enable:
+Then disable it entirely:
 
-    echo "0 0 0 " > /sys/class/scsi_host/host(X-1)/scan
+    echo 1 > /sys/block/<name of device ie sda>/device/delete
+
+Tail the end of dmesg and note the ata number, something similar to:
+
+    [1380211.312112] sd 2:0:0:0: [sdc] Synchronizing SCSI cache
+    [1380211.312313] sd 2:0:0:0: [sdc] Stopping disk
+    [1380211.846080] ata3.00: disabled
+
+Replace the drive, and once replaced use this number to trigger a re-scan of the drive connection:
+
+    echo "0 0 0 " > /sys/class/scsi_host/host<ata number>/scan
 
 Copy partitions from spare working to new drive:
 
     sfdisk -d /dev/sdOLD | sfdisk /dev/sdNEW
     
+
 Re-add drives to arrays:
 
     mdadm -a /dev/mdX /dev/sdXX
