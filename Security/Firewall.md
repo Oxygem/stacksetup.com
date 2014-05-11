@@ -17,3 +17,10 @@ Hardening SSH:
 	iptables -A INPUT -p tcp --dport 22 --syn -j DROP
 
 	# Note : pseudocode, rules have not been tested. Change 22 to your SSH port.
+
+On Installation:
+	# Most distros have quite restrictive firewalls by default which often leads to people locking themselves out.
+	iptables -F
+	# <Run your own rules here>
+	# Save changes
+	service iptables save
