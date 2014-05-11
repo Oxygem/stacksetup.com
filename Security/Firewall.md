@@ -18,6 +18,8 @@ Hardening SSH:
 
 	# Note : pseudocode, rules have not been tested. Change 22 to your SSH port.
 
+
+	
 On Installation:
 	# Most distros have quite restrictive firewalls by default which often leads to people locking themselves out.
 	iptables -F
