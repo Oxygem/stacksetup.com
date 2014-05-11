@@ -21,6 +21,7 @@ Hardening SSH:
 
 
 On Installation:
+
 	# Most distros have quite restrictive firewalls by default which often leads to people locking themselves out.
 	iptables -F
 	# <Run your own rules here>
