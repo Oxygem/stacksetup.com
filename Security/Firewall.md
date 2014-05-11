@@ -12,7 +12,7 @@ Basic Info:
 Hardening SSH:
 
     # Allow 2 new connections per minute per IP
-	iptables -A INPUT -p tcp --dport 22 --syn -m hashlimit --hashlimit-name ssh --hashlimit-limit 2/m --hashlimit-burst 2 -j ACCEPT
+	iptables -A INPUT -p tcp --dport 22 --syn -m hashlimit --hashlimit-name ssh --hashlimit-mode srcip --hashlimit-limit 2/m --hashlimit-burst 2 -j ACCEPT
 	# Drop new connections that are over 2 per minute
 	iptables -A INPUT -p tcp --dport 22 --syn -j DROP
 
@@ -26,3 +26,4 @@ On Installation:
 	# <Run your own rules here>
 	# Save changes
 	service iptables save
+	
