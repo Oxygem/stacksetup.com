@@ -5,7 +5,7 @@ $keywords=iptables firewall
 Basic Info:
 
     iptables -F	#Clear ruleset
-    iptables -nLv # List all rules (L), without resolving IP addresses to domain names (n) in verbose mode (v)
+    iptables -nL -v # List all rules (L), without resolving IP addresses to domain names (n) in verbose mode (v)
     iptables -A <chain> [matches] [-j TO-CHAIN] # E.g. iptables -A INPUT -p tcp --dport 80 -j ACCEPT
 
 
