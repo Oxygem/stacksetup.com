@@ -4,4 +4,11 @@ One of the more negative sides to VM hosting is the potential for abuse (bad cli
 
 OpenVZ traffic flows through the FORWARD table (in both directions) before hitting INPUT or OUTPUT.
 
-COMING SOON.
+Useful examples:
+
+	# Limit outgoing mail to 50/hour, log + drop others. Does not cause loss of mail (mailserver will queue/spool and retry); but will prevent spammers causing too much trouble
+	iptables -A FORWARD -p tcp --sport 25 --syn -m hashlimit --hashlimit-mode srcip --hashlimit-limit 50/hour --hashlimit-burst 50 -j ACCEPT
+	iptables -A FORWARD -p tcp --sport 25 --syn -j LOG
+	iptables -A FORWARD -p tcp --sport 25 --syn -j DROP
+	
+# Todo - more rules
