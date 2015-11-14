@@ -2,8 +2,6 @@ $title=Minecraft Game Server on Debian
 
 This entry will guide you through the process of setting up a server for Minecraft 1.8-1.8.8 on Debian 8
 
-`mc.example.com` and `192.168.1.1` are used as example domains and IPs. Change as requiered for your setup.
-
 #### Initial steps
 
 Make sure your system is up to date
