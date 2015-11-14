@@ -24,7 +24,6 @@
 
 + Basic Steam setup & install
 + Setup Dedicated Source Server (any game)
-+ Minecraft server setup
 
 
 **Voice**
