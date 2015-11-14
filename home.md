@@ -67,7 +67,7 @@ Welcome to Stack Setup. A collection of useful Linux related tutorials, designed
     <h4>Gaming</h4>
     <ul>
         <li><a href="$=homeGaming/SourceFastDownload">Setting up source fastdownload</a></li>
-	<li><a href="$=homeGaming/SourceFastDownload">Setting up a Minecraft server on Debian</a></li>
+	<li><a href="$=homeGaming/Minecraft">Setting up a Minecraft server on Debian</a></li>
     </ul>
 </div>
 
