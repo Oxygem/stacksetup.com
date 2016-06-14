@@ -83,7 +83,7 @@ Each node's CPU is shared by customers. We monitor our nodes to ensure that in t
 
 Each node's network uplink is shared between all customers on the node. For this reason we have a fair usage policy (<a href=http://afterburst.com/network-policy>here</a>). Our fair usage policy doesn't affect most customers and is only enforced when a node has bandwidth related issues. If you're unsure of if your intended usage is suitable for your service, just let our support team know what it is you're doing and what your expected utilisation will be and we'll discuss it with you. 
 
-##### Do you allow \<illegal action here\>?
+##### Do you allow _example-illegal-activity-here_?
 
 No. Even if something isn't specifically prohibited in our <a href=http://afterburst.com/terms-of-service>terms of service</a> or <a href=http://afterburst.com/acceptable-use-policy>acceptable use policy</a>; if it is illegal in any of the countries that we operate - or your own country - please don't do it. 
 
