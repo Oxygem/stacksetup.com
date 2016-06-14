@@ -79,6 +79,10 @@ Recently written or read data is stored on a RAID1 array of SSD's. This is signi
 
 Most of our customers don't receive abuse reports. However, if you are one of the unlucky ones who do; as long as you respond to us within the given timeframe (depends on what kind of abuse is involved) - you won't have any trouble. You can ask us for an extension to look in to the issue, e.g. if you're away and can't access your VPS. It is important that we receive some communication though. 
 
+##### Backups
+
+We recommend customers keep their own backups of their data. We do not guarantee that we can recover your data in the case of full data loss; though we have not experienced a case of full data loss in over 6 years of the company's operation. If your data has value to you, please implement your own off site backup policy. We may in future bring back backup functionality via the VPS control panel, though this isn't currently on the roadmap. 
+
 ##### Are CPU cores dedicated or shared?
 
 Each node's CPU is shared by customers. We monitor our nodes to ensure that in the case a CPU is overloaded, we can take action quickly (e.g. by stopping a runaway process, or moving a particularly CPU intensive customer to a more powerful/less loaded host node). This means there is always plenty of CPU power available to you.
@@ -106,7 +110,7 @@ If you're experiencing network issues, we would really appreciate reports from M
 
 	mtr -r <vps IP here> -c 100
 	
-If you're not able to connect to SSH, but your VPS is online; try connecting via the serial console in the VPS control panel. It allows you to log in to your VPS bypassing your VPS's network, firewall (and SSH daemon) entirely. Common issues that prevent SSH login are incorrectly configured firewall, SSH daemon not listening/listening on the wrong port; and network configuration issues. You can clear you're firewall by running
+If you're not able to connect to SSH, but your VPS is online; try connecting via the serial console in the VPS control panel. It allows you to log in to your VPS bypassing your VPS's network, firewall (and SSH daemon) entirely. Common issues that prevent SSH login are incorrectly configured firewall, SSH daemon not listening/listening on the wrong port; and network configuration issues. You can clear your firewall by running
 
 	iptables -P INPUT ACCEPT
 	iptables -P OUTPUT ACCEPT
