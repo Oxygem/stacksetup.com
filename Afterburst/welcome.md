@@ -5,9 +5,11 @@ Welcome to Afterburst! This guide is intended to give new clients an introductio
 #### Useful Links
 
 VPS Control Panel: <a href=https://vps.afterburst.com>https://vps.afterburst.com</a>
+
 Your username for the VPS control panel will start with vmuser and will be followed by a number (e.g. vmuser000). Your initial password will have been sent to you in the New VPS Information email, please change it immediately after login. 
 
 Client Area: <a href=https://client.afterburst.com>https://client.afterburst.com</a>
+
 Your username and password will be as entered on sign up. You can use this area to submit support tickets, pay invoices and update your information.
 	
 #### KVM VPS
