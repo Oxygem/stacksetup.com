@@ -55,39 +55,39 @@ The private network allows you to have connectivity between two VPS (e.g. for pr
 	
 #### FAQS
 	
-##Can I set up TUN/TAP? 
+#####Can I set up TUN/TAP? 
 
 Yes - TUN/TAP can be enabled in the VPS control panel.
 
-##Can I enable PPTP/PPP? 
+#####Can I enable PPTP/PPP? 
 
 Yes - PPP can be enabled in the VPS control panel.
 
-##Can I enable FUSE?
+#####Can I enable FUSE?
 
 FUSE requires a support ticket. Just let us know.
 
-##I'm worried about receiving an abuse report. What should I know?
+#####I'm worried about receiving an abuse report. What should I know?
 
 Most of our customers don't receive abuse reports. However, if you are one of the unlucky ones who do; as long as you respond to us within the given timeframe (depends on what kind of abuse is involved) - you won't have any trouble. You can ask us for an extension to look in to the issue, e.g. if you're away and can't access your VPS. It is important that we receive some communication though. 
 
-## Are CPU cores dedicated or shared?
+##### Are CPU cores dedicated or shared?
 
 Each node's CPU is shared by customers. We monitor our nodes to ensure that in the case a CPU is overloaded, we can take action quickly (e.g. by stopping a runaway process, or moving a particularly CPU intensive customer to a more powerful/less loaded host node). This means there is always plenty of CPU power available to you.
 
-## Is the 1gbps network connection dedicated or shared.
+##### Is the 1gbps network connection dedicated or shared.
 
 Each node's network uplink is shared between all customers on the node. For this reason we have a fair usage policy (<a href=http://afterburst.com/network-policy>here</a>). Our fair usage policy doesn't affect most customers and is only enforced when a node has bandwidth related issues. If you're unsure of if your intended usage is suitable for your service, just let our support team know what it is you're doing and what your expected utilisation will be and we'll discuss it with you. 
 
-## Do you allow <illegal action here>?
+##### Do you allow <illegal action here>?
 
 No. Even if something isn't specifically prohibited in our <a href=http://afterburst.com/terms-of-service>terms of service</a> or <a href=http://afterburst.com/acceptable-use-policy>acceptable use policy</a>; if it is illegal in any of the countries that we operate - or your own country - please don't do it. 
 
-## Do you allow IP spoofing / DDoS attacks / etc.
+##### Do you allow IP spoofing / DDoS attacks / etc.
 
 See above - no. DDoS attacks are illegal and specifically prohibited in our ToS. We enforce best current practice 38 (BCP38) which means we don't allow spoofed traffic to leave our network. 
 
-## Does the 7 day money back guarantee apply to me?
+##### Does the 7 day money back guarantee apply to me?
 
 Yes - unless you've broken our terms of service or acceptable use policy; or if you're abusing the policy (e.g. signing up repeatedly every 7 days and asking for a refund each time). There's no other strings attached. 
 
