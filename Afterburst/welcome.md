@@ -94,4 +94,4 @@ Yes - unless you've broken our terms of service or acceptable use policy; or if 
 	
 #### What's next
 	
-The world is your oyster. It's entirely up to you what you do, as long as you stay within our Terms of Service and Acceptable Use Policy - whether its running a webserver for your blog, a minecraft server or your latest app. Good luck, and please do let us know if you run into any issues at support@afterburst.com!
+The world is your oyster. It's entirely up to you what you do, as long as you stay within our Terms of Service and Acceptable Use Policy - whether its running a webserver for your blog, a minecraft server or your latest app. Good luck, and please do let us know if you run into any issues by creating a ticket at <a href=https://client.afterburst.com/>https://client.afterburst.com/</a>!
