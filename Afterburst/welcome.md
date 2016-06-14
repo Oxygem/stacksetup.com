@@ -27,8 +27,8 @@ This section is specifically for KVM. Our KVM services come either pre-installed
 
 We highly recommend following a couple of steps once you've logged in to your VPS. 
 
-1) Set up key-based authentication for SSH. You can do this by using a tool such as ssh-keygen (if your PC is Linux/Mac based) or PuTTYGen (Windows). Once you've generated a key pair, you'll need to enter the public key into .ssh/authorized_keys in the directory of the user you'd like to enable the key for.
-	E.g. for root, enter the public key in /root/.ssh/authorized_keys (this being said - root login isn't recommended)
+1) Set up key-based authentication for SSH. You can do this by using a tool such as ssh-keygen (if your PC is Linux/Mac based) or PuTTYGen (Windows). Once you've generated a key pair, you'll need to enter the public key into .ssh/authorized\_keys in the directory of the user you'd like to enable the key for.
+	E.g. for root, enter the public key in /root/.ssh/authorized\_keys (this being said - root login isn't recommended)
 	Once you've entered the key, configure your SSH client to use the private key. Test the connection using key authentication, and if successful, move to the next step.
 	
 2) Disable PasswordAuthentication for SSH. You can do this by modifying /etc/sshd/sshd_config and changing "PasswordAuthentication yes" to "PasswordAuthentication no"
