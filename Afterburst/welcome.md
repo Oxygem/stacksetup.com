@@ -37,6 +37,11 @@ Some people at this point may like to change their SSH port. That's entirely per
 
 3) Update your system! You'll be able to do this by running "yum update" when running CentOS/RHEL-based operating systems, or "apt-get update" for Debian/Ubuntu based systems.
 
+#### Private Network
+
+We run a global encrypted private network. If you want to take advantage of this, just let us know in a support ticket and we'll assign your VPS's private IP addresses (2 or more VPS required).
+
+The private network allows you to have connectivity between two VPS (e.g. for private/not internet facing services like mysql). To take full advantage of it we recommend that you bind such software specifically to the private IP address. The private network is shared for all customers, so we recommend you take further security steps by blocking private network traffic to your secure services that doesn't come from one of your private IP addresses. 
 
 #### FAQS
 	
