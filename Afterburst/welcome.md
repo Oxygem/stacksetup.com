@@ -67,6 +67,10 @@ Yes - PPP can be enabled in the VPS control panel.
 
 FUSE requires a support ticket. Just let us know.
 
+##### How does SSD caching work?
+
+Recently written or read data is stored on a RAID1 array of SSD's. This is significantly faster than the RAID10 array of hard drives used for storage, which means you get near SSD IO speeds, with HDD capacities. 
+
 #####I'm worried about receiving an abuse report. What should I know?
 
 Most of our customers don't receive abuse reports. However, if you are one of the unlucky ones who do; as long as you respond to us within the given timeframe (depends on what kind of abuse is involved) - you won't have any trouble. You can ask us for an extension to look in to the issue, e.g. if you're away and can't access your VPS. It is important that we receive some communication though. 
@@ -79,7 +83,7 @@ Each node's CPU is shared by customers. We monitor our nodes to ensure that in t
 
 Each node's network uplink is shared between all customers on the node. For this reason we have a fair usage policy (<a href=http://afterburst.com/network-policy>here</a>). Our fair usage policy doesn't affect most customers and is only enforced when a node has bandwidth related issues. If you're unsure of if your intended usage is suitable for your service, just let our support team know what it is you're doing and what your expected utilisation will be and we'll discuss it with you. 
 
-##### Do you allow <illegal action here>?
+##### Do you allow \<illegal action here\>?
 
 No. Even if something isn't specifically prohibited in our <a href=http://afterburst.com/terms-of-service>terms of service</a> or <a href=http://afterburst.com/acceptable-use-policy>acceptable use policy</a>; if it is illegal in any of the countries that we operate - or your own country - please don't do it. 
 
