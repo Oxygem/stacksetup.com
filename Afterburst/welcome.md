@@ -67,6 +67,10 @@ Yes - PPP can be enabled in the VPS control panel.
 
 FUSE requires a support ticket. Just let us know.
 
+##### Does Afterburst offer cPanel?
+
+No -- though you can get a VPS cPanel licence from third parties for around $15/m - cheaper than a dedicated server licence - which you can then use on your VPS. 
+
 ##### How does SSD caching work?
 
 Recently written or read data is stored on a RAID1 array of SSD's. This is significantly faster than the RAID10 array of hard drives used for storage, which means you get near SSD IO speeds, with HDD capacities. 
@@ -95,6 +99,20 @@ See above - no. DDoS attacks are illegal and specifically prohibited in our ToS.
 
 Yes - unless you've broken our terms of service or acceptable use policy; or if you're abusing the policy (e.g. signing up repeatedly every 7 days and asking for a refund each time). There's no other strings attached. 
 
+
+#### I'm experiencing issues. Should I contact support? If so, what info does Afterburst need?
+
+If you're experiencing network issues, we would really appreciate reports from MTR (My traceroute) to and preferably from the VPS during the time you're experiencing issues. This helps us identify where in the internet the issue is occuring, and if it's something we can fix. You can download MTR using your Linux package manager, or on Windows by <a href=http://winmtr.net/download-winmtr/>downloading WinMTR</a>.
+
+	mtr -r <vps IP here> -c 100
+	
+If you're not able to connect to SSH, but your VPS is online; try connecting via the serial console in the VPS control panel. It allows you to log in to your VPS bypassing your VPS's network, firewall (and SSH daemon) entirely. Common issues that prevent SSH login are incorrectly configured firewall, SSH daemon not listening/listening on the wrong port; and network configuration issues. You can clear you're firewall by running
+
+	iptables -P INPUT ACCEPT
+	iptables -P OUTPUT ACCEPT
+	iptables -F
+
+You can also reconfigure your network interface via the VPS control panel by using the Reconfigure Network button.
 	
 #### What's next
 	
