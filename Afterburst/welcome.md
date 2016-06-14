@@ -12,7 +12,7 @@ Useful links:
 	
 KVM VPS:
 
-    This section is specifically for KVM. Our KVM services don't come with the OS preinstalled, so you'll need to install it over VNC. You'll be able to do this in the VPS control panel by following these steps:
+    This section is specifically for KVM. Our KVM services come either pre-installed via a template, or unconfigured with an ISO loaded. You can choose a template by selecting Reinstall in the VPS control panel, or mount an ISO. If you choose to mount an ISO, you'll be able to install your OS by following these steps:
 	
 	1) Mount the ISO you'd like to install (E.g. CentOS Minimal) to the CD/DVD drive.
 	2) Reboot your VPS
@@ -28,9 +28,25 @@ Getting started:
 		Once you've entered the key, configure your SSH client to use the private key. Test the connection using key authentication, and if successful, move to the next step.
 	2) Disable PasswordAuthentication for SSH. You can do this by modifying /etc/sshd/sshd_config and changing "PasswordAuthentication yes" to "PasswordAuthentication no"
 	
-	Some people at this point may like to change their SSH port. That's entirely personal preference, though it will only really stop automated SSH attackers. If you do want to change your SSH port, please keep it below 1024. This prevents rogue users from crashing your SSH daemon and replacing it with a malicious one.
+	Some people at this point may like to change their SSH port. That's entirely personal preference, though it will only really stop automated SSH attackers. If you do want to change your SSH port, please keep it below 1024. This prevents rogue user accounts on your VPS from crashing your SSH daemon and replacing it with a malicious one - as only processes run by privileged users can bind to ports under 1024.
 	
 	3) Update your system! You'll be able to do this by running "yum update" when running CentOS/RHEL-based operating systems, or "apt-get update" for Debian/Ubuntu based systems.
+
+
+FAQS:
+	
+	Can I set up TUN/TAP? 
+	
+	Yes - TUN/TAP can be enabled in the VPS control panel.
+	
+	Can I enable PPTP/PPP? 
+	
+	Yes - PPP can be enabled in the VPS control panel.
+	
+	Can I enable FUSE?
+	
+	FUSE requires a support ticket. Just let us know.
+	
 	
 What next?: 
 	

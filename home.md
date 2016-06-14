@@ -106,4 +106,13 @@ Welcome to Stack Setup. A collection of useful Linux related tutorials, designed
     <h4>&nbsp;</h4>
     <a href="$=homeIdeas">Stack ideas list</a>
 </div>
+<div class="clear"></div>
+
+<div class="left third">
+    <h4>Afterburst</h4>
+    <ul>
+        <li><a href="$=homeAfterburst/welcome">For Afterburst Customers</a></li>
+    </ul>
+</div>
+
 </div>
