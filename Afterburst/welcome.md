@@ -45,7 +45,10 @@ We run a global encrypted private network. If you want to take advantage of this
 
 The private network allows you to have connectivity between two VPS (e.g. for private/not internet facing services like mysql). To take full advantage of it we recommend that you bind such software specifically to the private IP address. The private network is shared for all customers, so we recommend you take further security steps by blocking private network traffic to your secure services that doesn't come from one of your private IP addresses. 
 
-	iptables -A INPUT -p tcp --dport 3306 ! -s 192.168.1.xxx -j DROP # Drop all traffic to 3306 that isn't from 192.168.1.xxx (! is a negation operator for the match condition)
+	iptables -A INPUT -p tcp --dport 3306 -s 192.168.1.xyz -j ACCEPT
+	iptables -A INPUT -p tcp --dport 3306 -s 192.168.1.zyx -j ACCEPT
+	iptables -A INPUT -p tcp --dport 3306 -i lo -j ACCEPT # Accept loopback/localhost
+	iptables -A INPUT -p tcp --dport 3306 -j DROP
 #### FAQS
 	
 Can I set up TUN/TAP? 
