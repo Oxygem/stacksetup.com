@@ -21,7 +21,7 @@ This section is specifically for KVM. Our KVM services come either pre-installed
 
 2) Reboot your VPS
 
-3) Connect via the VNC applet and install as you would a normal Linux server. 
+3) Connect via the VNC applet or HTML5 console and install as you would a normal Linux server. 
 
 4) Configure your network interface. IPv4 uses DHCP and IPv6 uses static allocation (please contact us if you need help). For getting basic IPv4 connectivity up so you can configure over SSH instead of VNC, "ifup eth0" should do the job. 
 
@@ -110,7 +110,7 @@ If you're experiencing network issues, we would really appreciate reports from M
 
 	mtr -r <vps IP here> -c 100
 	
-If you're not able to connect to SSH, but your VPS is online; try connecting via the serial console in the VPS control panel. It allows you to log in to your VPS bypassing your VPS's network, firewall (and SSH daemon) entirely. Common issues that prevent SSH login are incorrectly configured firewall, SSH daemon not listening/listening on the wrong port; and network configuration issues. You can clear your firewall by running
+If you're not able to connect to SSH, but your VPS is online; try connecting via the HTML5 serial console in the VPS control panel. It allows you to log in to your VPS bypassing your VPS's network, firewall configurations (and SSH daemon) entirely. Common issues that prevent SSH login are incorrectly configured firewall, SSH daemon not listening/listening on the wrong port; and network configuration issues. You can clear your firewall by running
 
 	iptables -P INPUT ACCEPT
 	iptables -P OUTPUT ACCEPT
