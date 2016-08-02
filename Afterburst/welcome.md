@@ -55,6 +55,10 @@ The private network allows you to have connectivity between two VPS (e.g. for pr
 	
 #### FAQS
 	
+#####When will my order be activated?
+
+Orders from new customers are processed within 24h of payment. Orders from existing customers are typically processed immediately (depending on stock)
+	
 #####Can I set up TUN/TAP? 
 
 Yes - TUN/TAP can be enabled in the VPS control panel.
