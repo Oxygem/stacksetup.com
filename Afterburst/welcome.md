@@ -110,7 +110,7 @@ Yes - unless you've broken our terms of service or acceptable use policy; or if 
 
 #### I'm experiencing issues. Should I contact support? If so, what info does Afterburst need?
 
-If you're experiencing network issues, we would really appreciate reports from MTR (My traceroute) to and preferably from the VPS during the time you're experiencing issues. This helps us identify where in the internet the issue is occuring, and if it's something we can fix. You can download MTR using your Linux package manager, or on Windows by <a href=http://winmtr.net/download-winmtr/>downloading WinMTR</a>.
+We list scheduled and known issues in the Network Status section of the Client Area - where you can read detailed information about current events. We also have a live status monitor which shows the up/down status of all our servers. If you're experiencing network issues, we would really appreciate reports from MTR (My traceroute) to and preferably from the VPS during the time you're experiencing issues. This helps us identify where in the internet the issue is occuring, and if it's something we can fix. You can download MTR using your Linux package manager, or on Windows by <a href=http://winmtr.net/download-winmtr/>downloading WinMTR</a>.
 
 	mtr -r <vps IP here> -c 100
 	
