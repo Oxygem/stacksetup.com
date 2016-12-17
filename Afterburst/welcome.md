@@ -25,6 +25,12 @@ This section is specifically for KVM. Our KVM services come either pre-installed
 
 4) Configure your network interface. IPv4 uses DHCP and IPv6 uses static allocation (please contact us if you need help). For getting basic IPv4 connectivity up so you can configure over SSH instead of VNC, "ifup eth0" should do the job. 
 
+On our new SSD KVM packages, IPv6 automatic configuration is unfortunately not possible. Your /64 is within a larger /48. Unfortunately the /64 isn't routable, so you must reconfigure the network interface to use the below options:
+
+Host Node: Jaguar
+Gateway: 2a01:4a0:4a::1
+Prefix size: 48 
+
 #### Getting Started
 
 We highly recommend following a couple of steps once you've logged in to your VPS. 
