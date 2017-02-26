@@ -39,7 +39,7 @@ We highly recommend following a couple of steps once you've logged in to your VP
 
 Some people at this point may like to change their SSH port. That's entirely personal preference, though it will only really stop automated SSH attackers. If you do want to change your SSH port, please keep it below 1024. This prevents rogue user accounts on your VPS from crashing your SSH daemon and replacing it with a malicious one - as only processes run by privileged users can bind to ports under 1024.
 
-3) Update your system! You'll be able to do this by running "yum update" when running CentOS/RHEL-based operating systems, or "apt-get update" for Debian/Ubuntu based systems.
+3) Update your system! You'll be able to do this by running "yum update" when running CentOS/RHEL-based operating systems, or "apt-get update && apt-get upgrade" for Debian/Ubuntu based systems.
 
 #### Private Network
 
