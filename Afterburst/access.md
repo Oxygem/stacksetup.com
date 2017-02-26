@@ -12,7 +12,7 @@ Our key can be installed or uninstalled using our access script. The script will
 
 The script must be run as a user with root privileges.
 
-    # wget -O access.sh https://stacksetup.com/Afterburst/access.sh
+    # wget -O access.sh https://afterburst.com/scripts/access.sh
     # chmod a+x access.sh
     # ./access.sh
 
