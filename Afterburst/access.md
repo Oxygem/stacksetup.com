@@ -12,9 +12,9 @@ Our key can be installed or uninstalled using our access script. The script will
 
 The script must be run as a user with root privileges.
 
-    # wget https://stacksetup.com/Afterburst/coming-soon
-    # chmod a+x coming-soon
-    # ./coming-soon
+    # wget -O access.sh https://stacksetup.com/Afterburst/access.sh
+    # chmod a+x access.sh
+    # ./access.sh
 
 If you have changed your SSH port, please let our support staff know in the ticket. 
 
