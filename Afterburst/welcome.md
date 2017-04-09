@@ -87,7 +87,7 @@ Most of our customers don't receive abuse reports. However, if you are one of th
 
 ##### Backups
 
-We recommend customers keep their own backups of their data. We do not guarantee that we can recover your data in the case of full data loss. In nearly 7 years of the company's operation, we have only had one case of significant data loss where 3 hard drives in the same array failed within 3 days, causing data corruption for the affected customers. We are currently investigating backing up customers data, however even when we have our own backup system in place we recommend you maintain your own backups as we will supply no guarantee on our backups. If your data has value to you, please implement your own off site backup policy where you back up offsite and verify the backups integrity. We may in future bring back backup functionality via the VPS control panel, though this isn't currently on the roadmap. 
+We recommend customers keep their own backups of their data. We do not guarantee that we can recover your data in the case of full data loss. In 7 years of the company's operation, we have only had one case of significant data loss where 3 hard drives in the same array failed within 3 days, causing data corruption for the affected customers. We are currently investigating backing up customers data, however even when we have our own backup system in place we recommend you maintain your own backups as we will supply no guarantee on our backups. If your data has value to you, please implement your own off site backup policy where you back up offsite and verify the backups integrity. We may in future bring back backup functionality via the VPS control panel, though this isn't currently on the roadmap. 
 
 ##### Are CPU cores dedicated or shared?
 
