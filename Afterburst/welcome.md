@@ -63,15 +63,18 @@ Orders from new customers are processed within 24h of payment. Orders from exist
 	
 #####Can I set up TUN/TAP? 
 
-Yes - TUN/TAP can be enabled in the VPS control panel.
+OpenVZ: Yes - TUN/TAP can be enabled in the VPS control panel. 
+KVM: Yes - No action required -- you can configure in the OS as normal. 
 
 #####Can I enable PPTP/PPP? 
 
-Yes - PPP can be enabled in the VPS control panel.
+OpenVZ: Yes - PPP can be enabled in the VPS control panel.
+KVM: Yes - No action required -- you can configure in the OS as normal. 
 
 #####Can I enable FUSE?
 
-FUSE requires a support ticket. Just let us know.
+OpenVZ: FUSE requires a support ticket. Just let us know.
+KVM: Yes - No action required -- you can configure in the OS as normal. 
 
 ##### Does Afterburst offer cPanel?
 
