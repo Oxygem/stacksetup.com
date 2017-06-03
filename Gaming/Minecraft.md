@@ -1,6 +1,6 @@
 $title=Minecraft Game Server on Debian
 
-This entry will guide you through the process of setting up a server for Minecraft 1.8-1.8.8 on Debian 8
+This entry will guide you through the process of setting up a server for Minecraft 1.11.2 on Debian 8
 
 #### Initial steps
 
@@ -8,7 +8,7 @@ Make sure your system is up to date
 
 `sudo apt-get update && sudo apt-get dist-upgrade`
 
-Install the required dependencies. You will need at least Java 7, but Java 8 is recommended. OpenJDK is fine.
+Install the required dependencies. You will need at least Java 7, but Java 8 is HIGHLY recommended. OpenJDK is fine.
 
 `sudo apt-get install openjdk-7-jre-headless`
 
@@ -30,23 +30,23 @@ For the purposes of this guide you should also have wget, nano, and ca-certifica
 
 #### Set up an official Minecraft (any version) server
 
-If you just want to run Mojang's official server (for small private servers for you and your friends, no plugins) you just need to download the official Minecraft 1.8.8 server.
+If you just want to run Mojang's official server (for small private servers for you and your friends, no plugins) you just need to download the official Minecraft 1.11.2 server.
 
-`wget https://s3.amazonaws.com/Minecraft.Download/versions/1.8.8/minecraft_server.1.8.8.jar`
+`wget https://s3.amazonaws.com/Minecraft.Download/versions/1.11.2/minecraft_server.1.11.2.jar`
 
-Any version of Minecraft from 1.8-1.8.8 can connect to a server running this file. If you want an older (or newer) version of Minecraft (such as 1.6.4 or 1.7.10), simply replace the two instances of `1.8.8` in the above command with the version you desire. (i.e. `wget https://s3.amazonaws.com/Minecraft.Download/versions/1.7.10/minecraft_server.1.7.10.jar`)
+If you want an older (or newer) version of Minecraft (such as 1.6.4 or 1.7.10), simply replace the two instances of `1.11.2` in the above command with the version you desire. (i.e. `wget https://s3.amazonaws.com/Minecraft.Download/versions/1.7.10/minecraft_server.1.7.10.jar`)
 
 After you have downloaded it, you need to run it with the following command.
 
-`java -Xmx1G -Xms1G -jar minecraft_server.1.8.8.jar nogui`
+`java -Xmx1G -Xms1G -jar minecraft_server.1.11.2.jar nogui`
 
-This will run the server with 1 gigabyte of RAM. If you want to use more or less RAM, just replace the `-Xmx1G` and `Xms1G` with the amount you want to use. (i.e. `java -Xmx512M -Xms512M -jar minecraft_server.1.8.8.jar nogui` will start a server with a half a gigabyte of RAM. As before, if you downloaded a different version of Minecraft, you have to replace the `1.8.8` in the above command with the version you downloaded.
+This will run the server with 1 gigabyte of RAM. If you want to use more or less RAM, just replace the `-Xmx1G` and `Xms1G` with the amount you want to use. (i.e. `java -Xmx512M -Xms512M -jar minecraft_server.1.11.2.jar nogui` will start a server with a half a gigabyte of RAM. As before, if you downloaded a different version of Minecraft, you have to replace the `1.11.2` in the above command with the version you downloaded.
 
 In the most recent versions of Minecraft, you must also accept the EULA for the server to actually start up. First, read the [Minecraft EULA](https://account.mojang.com/documents/minecraft_eula), then open up the eula.txt file with `nano eula.txt` and replace the third line that says `eula=false` with `eula=true`. After you have accepted the EULA, start the server again using the above command.
 
 The world will take a few seconds to generate the world. Once you see a line similar to `Done (5.779s)! For help, type "help" or "?"`, you're ready to connect to the server and play! Just use your server's IP address or domain as the server address in the game's server menu. When you want to shut down the server, just type `stop` into the terminal window, or `/stop` into the game's chat from an opped account.
 
-#### Set up a Spigot or Bukkit (1.8.x) server
+#### Set up a Spigot or Bukkit (1.11.2) server
 
 If you want to run a Spigot or Bukkit server for a public server, or you just want some of the awesome features you can get from plugins, you will need to go about it a little bit differently.
 
@@ -58,13 +58,15 @@ Now, you need to run the BuildTools. This will automatically download and compil
 
 `java -jar BuildTools.jar`
 
-As of this writing, the latest version is 1.8.8. It will work with Minecraft clients version 1.8-1.8.8.
+As of this writing, the latest version is 1.11.2. If you would like to compile another version of Spigot/Bukkit, use the following command.
+
+`java -jar BuildTools.jar --rev 1.10.2` (you can replace 1.10.2 with another version)
 
 After you have compiled it, you need to run your server with the following command.
 
-`java -Xmx1G -Xms1G -jar spigot-1.8.8.jar nogui`
+`java -Xmx1G -Xms1G -jar spigot-1.11.2.jar nogui`
 
-This will run the server with 1 gigabyte of RAM. If you want to use more or less RAM, just replace the `-Xmx1G` and `Xms1G` with the amount you want to use. (i.e. `java -Xmx512M -Xms512M -jar minecraft_server.1.8.8.jar nogui` will start a server with a half a gigabyte of RAM.
+This will run the server with 1 gigabyte of RAM. If you want to use more or less RAM, just replace the `-Xmx1G` and `Xms1G` with the amount you want to use. (i.e. `java -Xmx512M -Xms512M -jar minecraft_server.1.11.2.jar nogui` will start a server with a half a gigabyte of RAM.
 
 In the most recent versions of Minecraft, you must also accept the EULA for the server to actually start up. First, read the [Minecraft EULA](https://account.mojang.com/documents/minecraft_eula), then open up the eula.txt file with `nano eula.txt` and replace the third line that says `eula=false` with `eula=true`. After you have accepted the EULA, start the server again using the above command.
 
@@ -99,7 +101,7 @@ java -Xmx1G -Xms1G -jar minecraft_server.jar nogui # Replace minecraft_server.ja
 exit
 ```
 
-Now, when you want to run your server, just cd to the directory where your server is and run 
+Now, when you want to run your server, just cd to the directory where your server is and run
 
 `./server.sh`
 
