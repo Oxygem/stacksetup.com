@@ -64,6 +64,9 @@ Now we must resize the filesystem in order for this extra space to be usable. We
  
 #### Finishing up
 
+Now we just need to make sure that the swap exists on the new swap partition /dev/vda2. 
+
+    root@grml ~# mkswap /dev/vda2
     root@grml ~# shutdown -h now
     
 Finally, return to the VPS control panel and unmount the rescue disk from the CD-Rom. Then change the boot order back to '(1) Hard Disk (2) CD-ROM' and then click the 'reboot' button. 
