@@ -116,4 +116,11 @@ Welcome to Stack Setup. A collection of useful Linux related tutorials, designed
     </ul>
 </div>
 
+<div class="left third">
+    <h4>KVM</h4>
+    <ul>
+        <li><a href="$=homeKVM/resize">Upgrading/resizing KVM VPS</a></li>
+    </ul>
+</div>
+
 </div>
