@@ -82,7 +82,7 @@ No -- though you can get a VPS cPanel licence from third parties for around $15/
 
 ##### How does SSD caching work?
 
-Recently written or read data is stored on a RAID1 array of SSD's. This is significantly faster than the RAID10 array of hard drives used for storage, which means you get near SSD IO speeds, with HDD capacities. 
+Recently written or read data is stored on a RAID1 array of SSD's. This is significantly faster than the RAID10 array of hard drives used for storage, which means you get near SSD IO speeds, with HDD capacities. Our SSD caching is a hotspot cache with LRU (least recently used) eviction policy. This means that while you may not see a performance increase in benchmarks (e.g. using dd to check disk speed); there will be a significant performance boost in regular usage. 
 
 #####I'm worried about receiving an abuse report. What should I know?
 
