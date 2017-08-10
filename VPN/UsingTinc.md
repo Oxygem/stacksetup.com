@@ -81,7 +81,7 @@ Now we've named each machine, we're ready to have Tinc generate private/public k
 
 Save the keys with the default names (`/etc/tinc/vpn/hosts/master` and `/etc/tinc/vpn/hosts/client`). Now let's setup these files completely. On the master edit `/etc/tinc/vpn/hosts/master`, and put at the top:
 
-    Address=public-ip
+    Address=YOUR PUBLIC IP
     Port=655
     Compression=0
     Subnet=10.10.0.1/32
