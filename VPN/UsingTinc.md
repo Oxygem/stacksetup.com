@@ -81,7 +81,7 @@ Now we've named each machine, we're ready to have Tinc generate private/public k
 
 Save the keys with the default names (`/etc/tinc/vpn/hosts/master` and `/etc/tinc/vpn/hosts/client`). Now let's setup these files completely. On the master edit `/etc/tinc/vpn/hosts/master`, and put at the top:
 
-    Address=public-ip
+    Address=YOUR PUBLIC IP
     Port=655
     Compression=0
     Subnet=10.10.0.1/32
@@ -95,10 +95,10 @@ However, the network won't run yet, we need to edit `tinc-up` and `tinc-down` on
     $ cat tinc-up:
     #!/bin/bash
     # Up tinc, add IP
-    ifconfig vpn IP_TO_CHANGE netmask 255.255.255.0 up
+    ifconfig vpn <10.10.0.1 OR 10.10.0.2> netmask 255.255.255.0 up
     route add -net 10.10.0.0 netmask 255.255.255.0 gw 10.10.0.1 dev vpn
 
-All you do is replace `IP_TO_CHANGE` with the IP of whichever node you are on (master or client). Note the gateway IP is `10.10.0.1`, the IP of the master. Finally:
+All you do is replace `<10.10.0.1 OR 10.10.0.2>` with the IP of whichever node you are on (master or client). Note the gateway IP is `10.10.0.1`, the IP of the master. Finally:
 
     $ cat tinc-down:
     #!/bin/bash
