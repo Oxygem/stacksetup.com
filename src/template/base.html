@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+
+    <title>{% if page %}{{ page.title }} &mdash; {% endif %}{{ wiki_name }}</title>
+    {% if page %}{{ page.render_meta()|safe }}{% endif %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="/static/logo.png" />
+    <link rel="icon" href="/static/logo.png" type="image/x-icon" />
+
+    <link rel="canonical" href="{% if page %}{{ page.url }}{% else %}{{ path_and_name }}{% endif %}" />
+
+    <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+
+    <div id="wrap">
+        <header>
+            <h2><a href="/">Stack Setup</a></h2>
+            <nav><ul>
+                <li><a href="/">Home</a></li>
+                <li><ul>
+                    <li><a href="/Basics">Basics</a></li>
+                    <li><a href="/Security">Security</a></li>
+                    <li><a href="/Advanced">Advanced</a></li>
+                </ul> General &darr;</li>
+                <li><ul>
+                    <li><a href="/Email">Email</a></li>
+                    <li><a href="/DNS">DNS</a></li>
+                    <li><a href="/HTTP">HTTP</a></li>
+                    <li><a href="/Gaming">Gaming</a></li>
+                    <li><a href="/FTP">FTP</a></li>
+                    <li><a href="/VPN">VPN</a></li>
+                </ul> Protocols &darr;</li>
+                <li><ul>
+                    <li><a href="/OpenVZ">OpenVZ</a></li>
+                    <li><a href="/Develop">Develop</a></li>
+                </ul> Specialised &darr;</li>
+            </nav>
+        </header>
+
+        <nav id="breadcrumb">
+            Location:
+            {% if page %}
+                {% if page.path != '/' %}
+                <a href="/">/</a>
+                &mdash;
+                <a href="{{ page.path }}">{{ page.path[1:] }}</a>
+                {% else %}
+                    <a href="{{ page.path }}">{{ page.path }}</a>
+                {% endif %}
+                {% if page.name %}
+                    &mdash;
+                    {{ page.name }}
+                {% endif %}
+            {% else %}
+                <strong>{{ path_and_name }}</strong>
+            {% endif %}
+            <span id="links">
+                {% block header_links %}{% endblock %}
+            </span>
+        </nav>
+
+        {% block contents %}{% endblock %}
+
+        <footer>
+            <span class="left">
+              <strike>&copy;</strike> No copyright, no rights reserved.<br />
+              An <a href="http://oxygem.com">Oxygem</a> production.
+            </span>
+            <span class="right">
+                Hosting &amp; content from <a href="http://afterburst.com">Afterburst</a>.<br />
+                Generated in {{ page_generate_time }}s. Powered by <a href="#">MiniWiki</a>.
+            </span>
+        </footer>
+    </div><!--end wrap-->
+</body>
+</html>
