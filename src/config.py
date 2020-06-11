@@ -1,3 +1,5 @@
+import json
+
 from os import environ, path
 
 
@@ -10,8 +12,12 @@ template_folder = path.join(this_dir, 'template')
 static_folder = path.join(this_dir, 'static')
 
 auth_backend = 'miniwiki.auth.SimpleAuthBackend'
+
+with open(path.join(this_dir, 'users.json'), 'r') as f:
+    users = json.load(f)
+
 auth_backend_settings = {
-    'users_json_file': path.join(this_dir, 'users.json'),
+    'users': users,
 }
 
 
