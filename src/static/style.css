@@ -235,21 +235,23 @@ nav#breadcrumb {
         color: #1A1B1B;
     }
 
-    nav span#links {
-        float: right;
-    }
-    nav span#links a {
+    nav span a {
         color: #A7A7A7;
         cursor: pointer;
     }
-    nav span#links a:after {
+    nav span a:after {
         content: ' · ';
     }
-    nav span#links a:last-child:after {
+    nav span a:last-child:after {
         content: '';
     }
-    nav span#links a.active {
+
+    nav span a.active {
         color: rgb(33, 151, 212);
+    }
+
+    nav span#links {
+        float: right;
     }
 
 section > * {
