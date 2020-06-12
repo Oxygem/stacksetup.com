@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="/static/logo.png" />
     <link rel="icon" href="/static/logo.png" type="image/x-icon" />
 
-    <link rel="canonical" href="{% if page %}{{ page.url }}{% else %}{{ path_and_name }}{% endif %}" />
+    <link rel="canonical" href="{{ page_location }}" />
 
     <link rel="stylesheet" href="/static/style.css" />
 </head>
@@ -44,24 +44,10 @@
 
         <nav id="breadcrumb">
             Location:
-            {% if page %}
-                {% if page.path != '/' %}
-                <a href="/">/</a>
-                &mdash;
-                <a href="{{ page.path }}">{{ page.path[1:] }}</a>
-                {% else %}
-                    <a href="{{ page.path }}">{{ page.path }}</a>
-                {% endif %}
-                {% if page.name %}
-                    &mdash;
-                    {{ page.name }}
-                {% endif %}
-            {% else %}
-                <strong>{{ path_and_name }}</strong>
-            {% endif %}
-            <span id="links">
-                {% block header_links %}{% endblock %}
+            <span id="location">
+                {% block location_links %}{% endblock %}
             </span>
+            <span id="links">{% block header_links %}{% endblock %}</span>
         </nav>
 
         {% block contents %}{% endblock %}
@@ -73,7 +59,7 @@
             </span>
             <span class="right">
                 Hosting &amp; content from <a href="http://afterburst.com">Afterburst</a>.<br />
-                Generated in {{ page_generate_time }}s. Powered by <a href="#">MiniWiki</a>.
+                {% if page and page_cached %}Cached. {% endif %}Generated in {{ page_generate_time }}s. Powered by <a href="https://github.com/Oxygem/MiniWiki">MiniWiki</a>.
             </span>
         </footer>
     </div><!--end wrap-->
