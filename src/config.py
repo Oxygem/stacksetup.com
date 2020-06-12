@@ -20,6 +20,12 @@ auth_backend_settings = {
     'users': users,
 }
 
+cache_backend = 'miniwiki.cache.PymemcacheCacheBackend'
+cache_backend_settings = {
+    'host': 'localhost',
+    'port': 11211,
+}
+
 
 # Env settings
 #
