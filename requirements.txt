@@ -1,1 +1,1 @@
-miniwiki==0.4
+miniwiki==0.5
