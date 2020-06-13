@@ -1,1 +1,1 @@
-miniwiki[memcache]==0.5
+miniwiki[memcache]==0.7
