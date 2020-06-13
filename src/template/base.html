@@ -47,7 +47,12 @@
             <span id="location">
                 {% block location_links %}{% endblock %}
             </span>
-            <span id="links">{% block header_links %}{% endblock %}</span>
+            <span id="links">
+                {% if page %}
+                    Updated: {{ humanize.naturaltime(page.datetime_updated_utc) }} &middot;
+                {% endif %}
+                {% block header_links %}{% endblock %}
+            </span>
         </nav>
 
         {% block contents %}{% endblock %}
