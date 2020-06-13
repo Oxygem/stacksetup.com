@@ -2,6 +2,8 @@ import json
 
 from os import environ, path
 
+import humanize
+
 
 this_dir = path.abspath(path.dirname(__file__))
 
@@ -25,6 +27,12 @@ cache_backend_settings = {
     'host': 'localhost',
     'port': 11211,
 }
+
+
+def init_app(app):
+    @app.context_processor
+    def inject_humanize():
+        return {'humanize': humanize}
 
 
 # Env settings
