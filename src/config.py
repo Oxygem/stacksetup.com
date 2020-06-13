@@ -10,7 +10,9 @@ this_dir = path.abspath(path.dirname(__file__))
 name = 'Stack Setup'
 database = f'sqlite:///{path.join(this_dir, "database.db")}'
 
-template_folder = path.join(this_dir, 'template')
+if environ.get('STACK_SETUP_DISABLE_TEMPLATE') != 'on':
+    template_folder = path.join(this_dir, 'template')
+
 static_folder = path.join(this_dir, 'static')
 
 auth_backend = 'miniwiki.auth.SimpleAuthBackend'
